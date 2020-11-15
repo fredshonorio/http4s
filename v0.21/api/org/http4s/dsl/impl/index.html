@@ -186,6 +186,10 @@
                         <a class="object" href="LongVar$.html" title="Long extractor of a path variable:"></a>
                         <a href="LongVar$.html" title="Long extractor of a path variable:">LongVar</a>
                       </li><li class="current-entities indented4">
+                        <a class="object" href="MatrixVar$.html" title=""></a>
+                        <a class="class" href="MatrixVar.html" title="Matrix path variable extractor For an example see MatrixURIs This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant"></a>
+                        <a href="MatrixVar.html" title="Matrix path variable extractor For an example see MatrixURIs This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant">MatrixVar</a>
+                      </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="MethodConcat.html" title=""></a>
                         <a href="MethodConcat.html" title="">MethodConcat</a>
@@ -454,6 +458,29 @@ a Location header and may contain a body.</p><div class="fullcomment"><div class
 a Location header and may contain a body.</p><p>A 300, 301, 302, 303, 307 and 308 status SHOULD contain a Location header, which
 distinguishes this from other <code>EntityResponseGenerator</code>s.
 </p></div></div>
+    </li><li name="org.http4s.dsl.impl.MatrixVar" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MatrixVar[F[_]]extendsAnyRef"></a><a id="MatrixVar[F[_]]:MatrixVar[F]"></a>
+      <span class="permalink">
+      <a href="../../../../org/http4s/dsl/impl/MatrixVar.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Matrix path variable extractor For an example see MatrixURIs This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant" href="MatrixVar.html"><span class="name">MatrixVar</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="result"> extends <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Matrix path variable extractor
+For an example see <a href="https://www.w3.org/DesignIssues/MatrixURIs.html" target="_blank">MatrixURIs</a>
+This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant</p><div class="fullcomment"><div class="comment cmt"><p>Matrix path variable extractor
+For an example see <a href="https://www.w3.org/DesignIssues/MatrixURIs.html" target="_blank">MatrixURIs</a>
+This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant</p><pre><span class="kw">object</span> BoardVar <span class="kw">extends</span> MatrixVar(<span class="lit">"square"</span>, <span class="std">List</span>(<span class="lit">"x"</span>, <span class="lit">"y"</span>))
+Path(<span class="lit">"/board/square;x=5;y=3"</span>) <span class="kw">match</span> {
+  <span class="kw">case</span> Root / <span class="lit">"board"</span> / BoardVar(IntVar(x), IntVar(y)) <span class="kw">=&gt;</span> ...
+}</pre></div></div>
     </li><li name="org.http4s.dsl.impl.MethodConcat" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MethodConcatextendsAnyRef"></a><a id="MethodConcat:MethodConcat"></a>
       <span class="permalink">
@@ -879,6 +906,22 @@ distinguishes this from other <code>ResponseGenerator</code>s.
       
       <p class="shortcomment cmt">Long extractor of a path variable:</p><div class="fullcomment"><div class="comment cmt"><p>Long extractor of a path variable:</p><pre>Path(<span class="lit">"/user/123"</span>) <span class="kw">match</span> {
    <span class="kw">case</span> Root / <span class="lit">"user"</span> / LongVar(userId) <span class="kw">=&gt;</span> ...</pre></div></div>
+    </li><li name="org.http4s.dsl.impl.MatrixVar" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MatrixVar"></a><a id="MatrixVar:MatrixVar"></a>
+      <span class="permalink">
+      <a href="../../../../org/http4s/dsl/impl/MatrixVar$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="MatrixVar$.html"><span class="name">MatrixVar</span></a>
+      </span>
+      
+      
     </li><li name="org.http4s.dsl.impl.Path" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Path"></a><a id="Path:Path"></a>
       <span class="permalink">
