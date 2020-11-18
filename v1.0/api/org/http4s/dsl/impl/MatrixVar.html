@@ -143,8 +143,8 @@
                         <a href="$minus$greater$.html" title="">-&gt;</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="$div.html" title=""></a>
-                        <a href="$div.html" title="">/</a>
+                        <a class="object" href="$div$.html" title=""></a>
+                        <a href="$div$.html" title="">/</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="$div$colon$.html" title="Path separator extractor:"></a>
@@ -214,10 +214,6 @@
                         <a class="class" href="OptionalValidatingQueryParamDecoderMatcher.html" title="param extractor using org.http4s.QueryParamDecoder."></a>
                         <a href="OptionalValidatingQueryParamDecoderMatcher.html" title="param extractor using org.http4s.QueryParamDecoder.">OptionalValidatingQueryParamDecoderMatcher</a>
                       </li><li class="current-entities indented4">
-                        <a class="object" href="Path$.html" title=""></a>
-                        <a class="trait" href="Path.html" title="Base class for path extractors."></a>
-                        <a href="Path.html" title="Base class for path extractors.">Path</a>
-                      </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="PathVar.html" title=""></a>
                         <a href="PathVar.html" title="">PathVar</a>
@@ -241,10 +237,6 @@
                         <a class="object" href="Responses$.html" title=""></a>
                         <a class="trait" href="Responses.html" title=""></a>
                         <a href="Responses.html" title="">Responses</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="Root$.html" title="Root extractor:"></a>
-                        <a href="Root$.html" title="Root extractor:">Root</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="trait" href="Statuses.html" title=""></a>
@@ -300,7 +292,7 @@ For an example see <a href="https://www.w3.org/DesignIssues/MatrixURIs.html" tar
 This is useful for representing a resource that may be addressed in multiple dimensions where order is unimportant</p><pre><span class="kw">object</span> BoardVar <span class="kw">extends</span> MatrixVar(<span class="lit">"square"</span>, <span class="std">List</span>(<span class="lit">"x"</span>, <span class="lit">"y"</span>))
 Path(<span class="lit">"/board/square;x=5;y=3"</span>) <span class="kw">match</span> {
   <span class="kw">case</span> Root / <span class="lit">"board"</span> / BoardVar(IntVar(x), IntVar(y)) <span class="kw">=&gt;</span> ...
-}</pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/http4s/http4s/blob/22efba232503bbf906ad372b9d7810e028a43b6f/dsl/src/main/scala/org/http4s/dsl/impl/Path.scala" target="_blank">Path.scala</a></dd></dl><div class="toggleContainer block">
+}</pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/http4s/http4s/blob/4b6e13a9df54b4061385ab7b425dcc1d63ec8708/dsl/src/main/scala/org/http4s/dsl/impl/Path.scala" target="_blank">Path.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
