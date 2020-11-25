@@ -190,7 +190,7 @@ deliver them from there. For example, for all resources in the classpath under <
 
 <pre><code class="language-scala">val routes = resourceService[IO](ResourceService.Config(&quot;/assets&quot;, blocker))
 // routes: HttpRoutes[IO] = Kleisli(
-//   org.http4s.server.staticcontent.ResourceService$$$Lambda$13883/731987738@7dcdc09c
+//   org.http4s.server.staticcontent.ResourceService$$$Lambda$9373/49896170@e174a94
 // )
 </code></pre>
 
@@ -205,7 +205,7 @@ val routes = HttpRoutes.of[IO] {
     static(path, blocker, request)
 }
 // routes: HttpRoutes[IO] = Kleisli(
-//   org.http4s.HttpRoutes$$$Lambda$12595/833675044@36c3c2cb
+//   org.http4s.HttpRoutes$$$Lambda$8087/297142660@2e908daf
 // )
 </code></pre>
 
@@ -236,7 +236,7 @@ val webjars: HttpRoutes[IO] = webjarService(
   )
 )
 // webjars: HttpRoutes[IO] = Kleisli(
-//   org.http4s.server.staticcontent.WebjarService$$$Lambda$13884/887277613@617d14c
+//   org.http4s.server.staticcontent.WebjarService$$$Lambda$9374/1610265732@20e5dd
 // )
 </code></pre>
 
